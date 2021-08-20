@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar--height {   
+    height: 100px;
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url('../img/menu.svg')
+}
+
+.container-fluid{
+    width: 90%;
+}
+
+.container-fluid--width{
+    width: 100%;
+}
+
+.bg-orange {
+    background: #FD6826;
+}
+
+.btn-private-site { 
+    color: #083E7C;
+    border: 1px solid #083E7C;
+    border-radius: 70px;
+    padding: 5px 20px 5px 20px;    
+}
+
+.btn-private-site:hover { 
+    color: #083E7C;   
+}
+
+.btn-open-account {
+    color: #fff;
+    background-color: #083E7C;
+    border-radius: 70px;
+    padding: 6px 20px 6px 20px;   
+}
+
+.btn-open-account:hover { 
+    color: #fff;   
+}
+
+.container-jumbotron{
+    height: 455px;
+    background: linear-gradient(154.69deg, #FE6925 39.38%, #FF8634 99.25%);
+}
+
+.banner{
+    margin-top: 95px;
+    height: 455px;
+    background: linear-gradient(154.69deg, #FE6925 39.38%, #FF8634 99.25%);
+}
+
+.banner-tarjeta-trafalgar{
+    margin-top: 95px;
+    height: 455px;
+    color: #fff;
+}
+
+.banner-main{
+    height: 100%;
+}
+
+.banner-textos{
+    width: 48%;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.title-n{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 48px;
+    color: #FE6925;
+}
+
+.title-c{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 48px;
+    color:  #320000;
+}
+
+.copy{
+    font-weight: 500;
+    color: #fff;
+    line-height: 23px;
+}
+
+.copy-c{
+    font-weight: 500;
+    color: #320000;
+    line-height: 23px;
+}
+
+.copy-n {
+    color: #FF861A;
+    line-height: 23px;
+    font-weight: bold;    
+}
+
+.img-vector{
+    margin-left: 10px;
+}
+
+.fz-20{
+    font-size: 20px;
+}
+
+.fz-15{
+    font-size: 15px;
+}
+
+.cta{
+    padding: 20px 20px 19px;
+    display: inline-block;
+    background: #320000;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 70px;
+    width: 330px;
+}
+
+.cta:hover{
+    color: #fff;
+}
+
+.copy--link{
+    color: #fff;
+    text-decoration: none;
+    line-height: 23px;
+    font-weight:500;
+}
+
+.commission{
+    height: 455px;
+    background:#fff;
+}
+
+.commission .title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 37px;
+    color: #320000;
+    width: 75%;
+}
+
+.commission .copy,
+.security .copy,
+.service .copy,
+.store .copy,
+.consult .copy {
+    color: #000;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+
+.consult{
+    height: 455px;
+    background:#fff;
+}
+
+.consult .title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 37px;
+    color: #320000;    
+}
+
+
+.logo::after {
+      content: "";
+      background-color: transparent;
+      display: block;
+      height: 45px;
+      position: relative;
+      margin-top: -210px;
+    
+}
+
+.security{
+    height: 781px;
+    background:#F6F1EB;
+}
+
+
+.security .title,
+.service .title,
+.store .title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 37px;
+    color: #320000;
+}
+
+
+.security--item{
+    font-weight: 500;
+}
+
+.security .banner-textos{
+    width: 48%;
+    margin-top:210px;
+    margin-right: 127px;
+}
+
+.security .logo{
+    margin-top: 210px;
+}
+
+.service{
+    height: 1024px;
+    background:#fff;
+}
+
+.service .banner-textos{
+    width: 30%;
+}
+
+.service-card{
+    margin-right: 55px;
+}
+
+.store{
+    height:375px;
+    background-color: #F6F1EB;
+}
+
+footer{
+    background-color: #320000;
+}
+
+footer .footer-ph-1{
+    font-size: 25px;
+    font-weight:900;
+}
+
+footer .logo-footer{
+    width: 91px;
+    height: 58px;
+}
+
+.active{
+    color: #320000 !important;
+}
+
+.btn-open-account-mobile{
+    background: #FD6826;
+    border-radius: 70px;
+}
+
+.label-menu-mobile{
+    font-size:40px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #FF861A;
+}
+
+.body-scroll{
+    overflow-y: hidden;
+}
+
+.dropdown-menu{
+    color: #fff;
+    background-color: #320000;
+    border: none;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #navbarSupportedContent ul li:not(:last-child,.list-drop){
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+    
+      #navbarSupportedContent a:not(.no-hover):hover{
+        border-bottom: none;
+        color: #fff !important;
+      }
+    
+      .offcanvas-header{ 
+          display:block; 
+      }
+    
+      .navbar-collapse {
+        position: fixed;
+        top:0; 
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #320000;
+    
+      }
+      
+      .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+      }
+
+
+
+    .banner {
+        height: 100%;
+    }
+
+    .banner-textos{
+        width: 100%;
+    }
+
+    .security .banner-textos{
+        width: 100%;
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+
+    .commission .title{
+        width: 100%;
+    }    
+
+    .consult .title{
+        width: 100%;
+    }
+
+    .security{
+        height: 100%;
+    }
+
+    .security .logo{
+       margin-top: 110px;
+    }
+
+    .security .logo::after{
+        margin-top: -195px;
+     }
+
+     .service{
+         height: 100%;
+         margin-top:215px;
+     }
+
+     .service-card{
+        margin-right: 0px;
+    }
+
+    .service .banner-textos{
+        width: 100%;
+    }
+
+  }
+
+
