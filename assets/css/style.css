@@ -114,12 +114,21 @@ body{
     margin-left: 10px;
 }
 
+
+.fz-25{
+    font-size: 25px !important;
+}
+
 .fz-20{
-    font-size: 20px;
+    font-size: 20px !important;
+}
+
+.fz-16{
+    font-size: 16px !important;
 }
 
 .fz-15{
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 .cta{
@@ -159,6 +168,7 @@ body{
 
 .commission .copy,
 .security .copy,
+.security-all .copy,
 .service .copy,
 .store .copy,
 .consult .copy {
@@ -196,8 +206,15 @@ body{
     background:#F6F1EB;
 }
 
+.security-all{
+    height: 925px;
+    background:#F6F1EB;
+}
+
+
 
 .security .title,
+.security-all .title,
 .service .title,
 .store .title{
     font-weight: 900;
@@ -217,12 +234,23 @@ body{
     margin-right: 127px;
 }
 
+.security-all .banner-textos{
+    width: 48%;
+    margin-top: 150px;
+    margin-right: 127px;
+}
+
 .security .logo{
     margin-top: 210px;
 }
 
+.security-all .logo{
+   margin-top: -360px;
+   margin-left: 0px;
+}
+
 .service{
-    height: 1024px;
+    height: 836px;
     background:#fff;
 }
 
