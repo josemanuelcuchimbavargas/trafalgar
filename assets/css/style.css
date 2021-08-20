@@ -98,6 +98,20 @@ body{
     line-height: 23px;
 }
 
+.comercio-label{
+    font-weight: 500;
+    color: #320000;
+    line-height: 23px;
+    font-size:20px;
+}
+
+.beneficio-title,
+.beneficio-item{
+    font-weight: 500;
+    color: #320000;
+    line-height: 23px;
+}
+
 .copy-c{
     font-weight: 500;
     color: #320000;
@@ -131,7 +145,7 @@ body{
     font-size: 15px !important;
 }
 
-.cta{
+.cta {
     padding: 20px 20px 19px;
     display: inline-block;
     background: #320000;
@@ -170,13 +184,13 @@ body{
 .security .copy,
 .security-all .copy,
 .service .copy,
+.control .copy,
 .store .copy,
 .consult .copy {
     color: #000;
     font-weight: 500;
     line-height: 23px;
 }
-
 
 .consult{
     height: 455px;
@@ -190,7 +204,6 @@ body{
     color: #320000;    
 }
 
-
 .logo::after {
       content: "";
       background-color: transparent;
@@ -198,7 +211,6 @@ body{
       height: 45px;
       position: relative;
       margin-top: -210px;
-    
 }
 
 .security{
@@ -211,8 +223,6 @@ body{
     background:#F6F1EB;
 }
 
-
-
 .security .title,
 .security-all .title,
 .service .title,
@@ -223,6 +233,12 @@ body{
     color: #320000;
 }
 
+.control .title{
+    font-size: 46px;
+    line-height:48px;
+    color: #320000;
+    font-weight:900;
+}  
 
 .security--item{
     font-weight: 500;
@@ -236,8 +252,6 @@ body{
 
 .security-all .banner-textos{
     width: 48%;
-    margin-top: 150px;
-    margin-right: 127px;
 }
 
 .security .logo{
@@ -249,7 +263,12 @@ body{
    margin-left: 0px;
 }
 
-.service{
+.security-all--padding{
+    padding-top: 295px;
+}
+
+.service,
+.control{
     height: 836px;
     background:#fff;
 }
@@ -311,6 +330,12 @@ footer .logo-footer{
     color: #fff;
 }
 
+.security-all--title,
+.banner-tarjeta-trafalgar .img--width,
+.image-control{
+    width: 42%;
+}
+
 @media only screen and (max-width: 600px) {
 
     #navbarSupportedContent ul li:not(:last-child,.list-drop){
@@ -345,14 +370,17 @@ footer .logo-footer{
         transform: translateX(-100%);
       }
 
-
-
-    .banner {
+    .banner,
+    .consult,
+    .security,
+    .control,
+    .security-all {
         height: 100%;
     }
 
-    .banner-textos{
-        width: 100%;
+    .banner-tarjeta-trafalgar{
+        height: 100%;
+        margin-top:160px;
     }
 
     .security .banner-textos{
@@ -361,16 +389,22 @@ footer .logo-footer{
         margin-right: 0px;
     }
 
-    .commission .title{
+    .commission .title,
+    .banner-textos,
+    .service .banner-textos,
+    .banner-tarjeta-trafalgar .img--width,
+    .security-all--title,
+    .security-all .banner-textos,
+    .image-control {
         width: 100%;
     }    
 
     .consult .title{
-        width: 100%;
+        color: #fff;
     }
 
-    .security{
-        height: 100%;
+    .consult .title--modifier{
+        color: #320000;
     }
 
     .security .logo{
@@ -379,6 +413,10 @@ footer .logo-footer{
 
     .security .logo::after{
         margin-top: -195px;
+     }
+
+     .consult .logo::after{
+        margin-top: -80px;
      }
 
      .service{
@@ -390,8 +428,28 @@ footer .logo-footer{
         margin-right: 0px;
     }
 
-    .service .banner-textos{
-        width: 100%;
+    .title-n,
+    .title-c{
+        font-size:36px;
+        line-height:37px;
+    }
+
+    .comercio-label{
+        font-size: 16px;
+    }
+
+    .beneficio-item,
+    .beneficio-title{
+        font-size: 15px;
+    }
+
+    .security-all--padding{
+        padding-top: 50px;
+    }
+
+    .control .title{
+        font-size:36px;
+        line-height: 37px;
     }
 
   }

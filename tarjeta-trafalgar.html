@@ -22,7 +22,7 @@
 
         <!-- NAVBAR -->
 
-        <tr-navbar></tr-navbar>
+        <tr-navbar item="tarjeta"></tr-navbar>
 
         <!-- END NAVBAR -->
 
@@ -30,26 +30,24 @@
 
         <section class="banner-tarjeta-trafalgar">
             <div class="container banner-main d-flex align-items-center p-0 flex-column flex-md-row pb-5 pb-md-0">
-                <div style="width: 42%;">
+                <div class="img--width">
                     <img src="assets/img/image-8.png" class="mockup img-fluid">
                 </div>
                 <div class="banner-textos px-4 px-md-0">
-                    <h2 class="title-n">Tarjetas Trafalgar,</h2>
-                    <h2 class="title-c">una para cada día</h2>
+                    <h2 class="title-n">Tarjetas Trafalgar, <br class="d-none d-md-block"> <span class="title-c">una para cada día</span> </h2>
 
-                    <div class="mt-4 mb-4">
-                        <p class="copy-c fz-20">Aceptada en todo comercio que opere con MasterCard.</p>
+                    <div class="my-4">
+                        <p class="comercio-label m-0">Aceptada en todo comercio que opere con MasterCard.</p>
                     </div>
 
-                    <p class="copy-c fz-16"><b>Algunos beneficios:</b></p>
-                    <ul class="copy-c fz-16">
+                    <p class="beneficio-title"><b>Algunos beneficios:</b></p>
+                    <ul class="beneficio-item">
                         <li>Tarjeta Mastercard Garantizada</li>
                         <li>Cobertura para pagos internacionales</li>
                         <li>Giros en efectivo en ATM</li>
                     </ul>
                     <div class="mt-4">
-                        <a href="#" class="copy-n fz-15 text-center me-0 mt-3 me-md-5 text-decoration-none">Solicita
-                            gratis tu Tarjeta
+                        <a href="#!" class="copy-n fz-15 text-center me-0 mt-3 me-md-5 text-decoration-none">Solicita gratis tu Tarjeta
                             <img src="assets/img/Vector.png" class="mockup img-fluid img-vector">
                         </a>
                     </div>
@@ -64,20 +62,22 @@
     <!-- END HEADER -->
 
 
-    <!-- SECTION COMMISSION -->
+    <!-- SECTION CONSULT -->
     <section class="consult">
         <div
-            class="container banner-main d-flex justify-content-start align-items-center p-0 flex-column flex-md-row pt-5 pt-md-0 px-5 px-md-0">
+            class="container banner-main d-flex justify-content-start align-items-center p-0 flex-column flex-md-row pt-4 pt-md-0 px-4 px-md-0 pb-5 pb-md-0">
             <div class="logo d-none text-end pe-5 d-md-block" style="width:42%">
                 <img src="assets/img/mask-group.png" class="mockup">
             </div>
 
+            <div class="d-block d-md-none logo text-end">
+                <img src="assets/img/woman-mobile.svg" class="mockup">
+            </div>
+
             <div class="banner-textos">
-                <h2 class="title">En todas partes a toda hora</h2>
+                <h2 class="title">En todas partes <span class="title--modifier">a toda hora</span> </h2>
                 <div class="mt-4">
-                    <p class="copy-c pt-4 pt-md-0 fz-16">Podrás consultar toda la información de tu cuenta Trafalgar
-                        desde la app,
-                        de manera sencilla y transparente.</p>
+                    <p class="copy-c fz-16">Donde sea que estés tu Tarjeta Trafalgar te permite pagar, sin complicaciones, fácil y rápido</p>
                 </div>
                 <div class="mt-4">
                     <a href="#" class="cta text-center me-0 me-md-5">Solicita tu Tarjeta Trafalgar</a>
@@ -87,26 +87,24 @@
 
     </section>
 
-    <!-- END SECTION COMMISSION -->
+    <!-- END SECTION CONSULT -->
 
 
     <!-- SECTION SECURITY -->
 
     <section class="security-all">
 
-        <div
-            class="container banner-main d-flex justify-content-start align-items-center p-0 flex-column flex-md-row  ">
-            <div class="logo d-none text-end pe-5 d-md-block" style="width:42%">
-                <img src="assets/img/seguridad-ante-todo.png" class="mockup">
+        <div class="container banner-main d-flex px-0 flex-column flex-md-row security-all--padding px-4 px-md-0 pb-4 pb-md-0">
+            <div class="text-start text-md-end pe-0 pe-md-5 security-all--title">
+                <p class="m-0 title">Seguridad ante <br> todo</p>
             </div>
 
-            <div class="banner-textos">
-
-                <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mb-4">
-                    <div >
+            <div class="banner-textos mt-5 mt-md-0">
+                <div class="d-flex text-start text-md-end mb-4">
+                    <div>
                         <img src="assets/img/shield-check.png" width="40" height="40" alt="">
                     </div>
-                    <div class="text-start px-5" style="width:87%">
+                    <div class="text-start px-4" style="width:87%">
                         <h2 class="title fz-25">Seguridad</h2>
                         <div class="mt-2">
                             <p class="copy-c fz-16">Seguridad en tus transacciones en línea, factores de
@@ -115,11 +113,11 @@
                     </div>
                 </div>
 
-                <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mb-4">
-                    <div >
+                <div class="d-flex text-start text-md-end mb-4">
+                    <div>
                         <img src="assets/img/talk-bubbles.png" width="40" height="40" alt="">
                     </div>
-                    <div class="text-start px-5 " style="width:87%">
+                    <div class="text-start px-4 " style="width:87%">
                         <h2 class="title fz-25">Tecnología</h2>
                         <div class="mt-2">
                             <p class="copy-c fz-16">Tecnología Biométrica, que valida compras con tarjeta con
@@ -128,11 +126,11 @@
                     </div>
                 </div>
 
-                <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mb-4">
+                <div class="d-flex text-start text-md-end mb-4">
                     <div >
                         <img src="assets/img/rack-server.png" width="40" height="40" alt="">
                     </div>
-                    <div class="text-start px-5" style="width:87%">
+                    <div class="text-start px-4" style="width:87%">
                         <h2 class="title fz-25">Notificaciones instantáneas</h2>
                         <div class="mt-2">
                             <p class="copy-c fz-16">Notificaciones instantáneas al momento de comprar.</p>
@@ -140,11 +138,11 @@
                     </div>
                 </div>
 
-                <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row">
+                <div class="d-flex text-start text-md-end">
                     <div >
                         <img src="assets/img/e-check.png" width="50" height="50" alt="">
                     </div>
-                    <div class="text-start px-5" style="width:87%">
+                    <div class="text-start px-4" style="width:87%">
                         <h2 class="title fz-25">Transferencias protegidas</h2>
                         <div class="mt-2">
                             <p class="copy-c fz-16">Protección en transacciones mayores a $3,000.00.</p>
@@ -162,33 +160,34 @@
 
 
 
-    <!-- SECTION SERVICE -->
+    <!-- SECTION CONTROL -->
 
 
-    <section class="service">
+    <section class="control">
         <div
-            class="container banner-main d-flex justify-content-start align-items-center p-0 flex-column flex-md-row pt-md-0 px-5 px-md-0">
-            <div class="logo d-none text-end pe-5 d-md-block" style="width:42%">
-                <img src="assets/img/mask-group.png" class="mockup">
+            class="container banner-main d-flex justify-content-start align-items-center p-0 flex-column-reverse flex-md-row pt-5 pt-md-0 px-4 px-md-0 pb-5 pb-md-0">
+            <div class="mt-5 d-block d-md-none">
+                <a href="#" class="cta text-center me-0 me-md-5">Solicita tu Tarjeta Trafalgar</a>
+            </div>
+            
+            <div class="text-end pe-0 pe-md-5 image-control mt-4 mt-md-0">
+                <img src="assets/img/mask-group.png" class="mockup img-fluid">
             </div>
 
             <div class="banner-textos">
-                <h2 class="title">Mantén el control</h2>
-                <h2 class="title">24/7</h2>
+                <h2 class="title">Mantén el control <br class="d-none d-md-block"> 24/7</h2>
                 <div class="mt-4">
-                    <p class="copy-c pt-4 pt-md-0 fz-16">Desde tu cuenta en APP puedes manejar todos tus movimientos sin
+                    <p class="copy-c fz-16">Desde tu cuenta en APP puedes manejar todos tus movimientos sin
                         complicaciones.</p>
                 </div>
-                <div class="mt-4">
+                <div class="mt-4 d-none d-md-block">
                     <a href="#" class="cta text-center me-0 me-md-5">Solicita tu Tarjeta Trafalgar</a>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!--END SECTION SERVICE -->
-
 
 
     <!-- SECTION STORE -->
@@ -203,16 +202,10 @@
 
     <!-- END FOOTER -->
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

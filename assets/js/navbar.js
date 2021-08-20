@@ -18,8 +18,8 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
         <nav class="navbar navbar-expand-lg navbar-dark navbar--height bg-orange fixed-top" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logotipo.svg" alt="" width="77" height="49">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logotipo.svg" alt="Logo" width="77" height="49">
                 </a>
                 <a class="nav-link no-hover btn-open-account d-block d-md-none" href="#!">Solicita ahora</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,9 +39,9 @@ class Navbar extends HTMLElement {
                                <a href="#" class="text-decoration-none text-white btn-equis-close"><img src="assets/img/close-button.svg" alt="Cerrar"> </a>
                            </div>
                         </div>
-                        <li class="nav-item me-3 py-2 py-lg-0 d-block d-md-none"><a class="nav-link text-white" href="#!">
+                        <li class="nav-item me-3 py-2 py-lg-0 d-block d-md-none"><a class="nav-link text-white" href="./index.html">
                                 Home</a></li>
-                        <li class="nav-item me-3 py-2 py-lg-0 d-none d-md-block"><a class="nav-link text-white ${this.item == 'tarjeta' ? 'active' : '' }" href="#!">Tarjeta
+                        <li class="nav-item me-3 py-2 py-lg-0 d-none d-md-block"><a class="nav-link text-white ${this.item == 'tarjeta' ? 'active' : '' }" href="./tarjeta-trafalgar.html">Tarjeta
                                 Trafalgar</a></li>
                         <li class="nav-item me-3 py-2 py-lg-0 d-none d-md-block"><a class="nav-link text-white ${this.item == 'transferencia' ? 'active' : '' } "
                                 href="#!">Transferencias</a></li>
@@ -52,9 +52,9 @@ class Navbar extends HTMLElement {
                                     Funcionalidades
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="list-drop"><a class="dropdown-item py-3" href="#">Tarjeta Trafalgar</a></li>
-                            <li class="list-drop"><a class="dropdown-item py-3" href="#">Transferencias</a></li>
-                            <li class="list-drop"><a class="dropdown-item py-3" href="#">Pago de servicios</a></li>
+                            <li class="list-drop"><a class="dropdown-item py-3" href="./tarjeta-trafalgar.html">Tarjeta Trafalgar</a></li>
+                            <li class="list-drop"><a class="dropdown-item py-3" href="#!">Transferencias</a></li>
+                            <li class="list-drop"><a class="dropdown-item py-3" href="#!">Pago de servicios</a></li>
                             </ul>
                         </li>
                         <li class="nav-item me-3 py-2 py-lg-0"><a class="nav-link text-white ${this.item == 'nosotros' ? 'active' : '' } "
