@@ -12,6 +12,55 @@ body{
     background-image: url('../img/menu.svg')
 }
 
+.nav-link:hover:not(.btn-private-site, .btn-open-account){
+    color: #320000 !important;
+}
+
+.button-banner {
+    padding: 20px 20px 19px;
+    display: inline-block;
+    background: #320000;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 70px;
+    width: 330px;
+    position: relative;
+}
+
+.button-banner.effect-1{
+    transition: all 0.2s linear 0s;
+}
+
+.button-banner.effect-1:before {
+    content: url(../img/chevron-down.svg);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    top: 25px;
+    opacity: 0;
+    transition: all 0.2s linear 0s;
+}
+
+.button-banner:hover{
+    background-color:#fff;
+    color: #FD6826 !important;
+    text-indent: -100px;
+    border: 1px solid #FD6826 !important;
+}
+
+.button-banner--modifier:hover{
+    text-indent: -80px;
+}
+
+.button-banner:hover:before{
+    opacity: 1;
+    text-indent: -25px;
+    
+}
+
 .container-fluid{
     width: 90%;
 }
@@ -156,7 +205,8 @@ body{
     width: 330px;
 }
 
-.cta:hover{
+.cta:hover,
+.copy--link:hover{
     color: #fff;
 }
 
@@ -214,8 +264,8 @@ body{
 }
 
 .security{
-    height: 781px;
-    background:#F6F1EB;
+   padding: 320px 0px 78px 0px;
+   background-color:#F6F1EB;
 }
 
 .security-all{
@@ -246,7 +296,6 @@ body{
 
 .security .banner-textos{
     width: 48%;
-    margin-top:210px;
     margin-right: 127px;
 }
 
@@ -254,9 +303,6 @@ body{
     width: 48%;
 }
 
-.security .logo{
-    margin-top: 210px;
-}
 
 .security-all .logo{
    margin-top: -360px;
@@ -267,7 +313,10 @@ body{
     padding-top: 295px;
 }
 
-.service,
+.service{
+    padding: 295px 0px 200px 0px;
+}
+
 .control{
     height: 836px;
     background:#fff;
@@ -336,6 +385,42 @@ footer .logo-footer{
     width: 42%;
 }
 
+.solicita{
+    transition: all 0.2s linear 0s;
+}
+
+.solicita:hover{
+    color: #FF861A;
+    margin-right: 25px !important;
+    transition: all 0.2s linear 0s;
+}
+
+/* SWIPER */
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
+
+.swiper-pagination-bullet-active{
+      background-color: #FD6826;
+}
+
+.swiper-pagination-bullet{
+  margin: 0 0 0 20px !important;
+}
+
+
+.swiper-pagination{
+    text-align: end;
+}
+
+.slide-title{
+    color:#FD6826;
+    font-size:21px;
+    line-height:37px;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
 
     #navbarSupportedContent ul li:not(:last-child,.list-drop){
@@ -372,7 +457,6 @@ footer .logo-footer{
 
     .banner,
     .consult,
-    .security,
     .control,
     .security-all {
         height: 100%;
@@ -385,8 +469,6 @@ footer .logo-footer{
 
     .security .banner-textos{
         width: 100%;
-        margin-top: 50px;
-        margin-right: 0px;
     }
 
     .commission .title,
@@ -407,9 +489,15 @@ footer .logo-footer{
         color: #320000;
     }
 
-    .security .logo{
-       margin-top: 110px;
+    .security{
+        padding:50px 0px 0px 0px;
     }
+
+    .security .logo{
+        padding-top: 115px;
+       text-align: center;
+     }
+
 
     .security .logo::after{
         margin-top: -195px;
@@ -420,8 +508,7 @@ footer .logo-footer{
      }
 
      .service{
-         height: 100%;
-         margin-top:215px;
+        padding: 235px 0px 80px 0px;
      }
 
      .service-card{
@@ -452,6 +539,29 @@ footer .logo-footer{
         line-height: 37px;
     }
 
+    .swiper-container {
+        width: 350px;
+        height: 355px;
+    }
+
+    .swiper-pagination{
+        text-align: center;
+    }
+
   }
+
+
+  @media only screen and (min-width: 400px) and (max-width: 420px) {
+
+    .consult .banner-textos{
+        width: 88%;
+    }
+
+
+  }
+
+
+
+
 
 
