@@ -31,18 +31,47 @@ body{
     border-block-start: #A0A0A0;
 }
 
+.close-success{
+    padding: 17px 20px 15px;
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    color: #083E7C;    
+    border-color: #083E7C;
+    border-block-end-color: #083E7C;
+    border-block-end: #083E7C;
+    border-block-start: #083E7C;
+    border: 1px solid #083E7C;
+    box-sizing: border-box;
+    border-radius: 70px;
+    width: 208px;
+    height: 57px;
+}
+
+.copy{
+    color:#76B82A;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+}
+
+
 .footer-no-flex{
     display: unset !important;
 }
 
 .size-box {
-    width: 328px !important;
+    width: 100% !important;
     height: 56px !important;
     border: 1px solid #320000 !important;
 }
 
 .color-box-textarea {
     border: 1px solid #320000 !important;
+    width: 100% !important;
 }
 
 .color-default {
@@ -62,3 +91,26 @@ body{
     font-size: 16px !important;
     line-height: 26px !important;
 }
+
+#loading {
+    display: none;
+}
+
+/* Absolute Center Spinner */
+.loading {    
+    color: white;    
+    padding-top: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 1500;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FD6826;    
+  }
+  

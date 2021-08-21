@@ -31,13 +31,17 @@
 
         <section class="banner">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary" onclick="openModal()">
                 Contactanos
             </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" onclick="openSuccess()">
+                Success
+            </button>
+
+            <!-- Modal Formulario -->
+            <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content p-full">
                         <div class="modal-header none-border-bottom">
@@ -50,53 +54,100 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="sendEmail" name="sendEmail">
+                            <form id="sendEmail" name="sendEmail" onsubmit="submitForm(event)">
                                 <div class="row mb-3">
-                                    <div class="col-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <label for="nombre" class="col-form-label copy-modal">Nombre</label>
-                                        <input type="text" class="form-control size-box color-default" id="nombre" >
+                                        <input type="text" class="form-control size-box color-default" id="nombre"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <label for="email" class="col-form-label copy-modal">Email</label>
-                                        <input type="email" class="form-control size-box color-default" id="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                                        <input type="email" class="form-control size-box color-default" id="email"
+                                            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                                            required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <label for="telefono" class="col-form-label copy-modal">Télefono</label>
-                                        <input type="text" class="form-control size-box color-default" id="telefono">
+                                        <input type="text" class="form-control size-box color-default" id="telefono"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <label for="razon" class="col-form-label copy-modal">Razón</label>
-                                        <select name="razon" id="razon" class="form-control size-box color-default">
-                                            <option value="">Otros</option>
+                                        <select name="razon" id="razon" class="form-control size-box color-default"
+                                            required>
+                                            <option value="Otros">Otros</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
-                                    <div class="col-12">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <label for="comentario" class="col-form-label copy-modal">Comentario</label>
-                                        <textarea class="form-control color-box-textarea color-default" name="comentario" id="comentario" cols="20"
-                                            rows="5"></textarea>
+                                        <textarea class="form-control color-box-textarea color-default"
+                                            name="comentario" id="comentario" cols="20" rows="5" required></textarea>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer none-border-top footer-no-flex">          
-                            <button type="submit" class="send-email text-center me-0 me-md-5" form="sendEmail">Enviar mensaje</button>                            
+                        <div class="modal-footer none-border-top footer-no-flex">
+                            <button type="submit" class="send-email text-center me-0 me-md-5" form="sendEmail">Enviar
+                                mensaje</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
+            <!-- Modal Success -->
+            <div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content p-full" style="width: 910px;
+                    height: 730px;">
+                        <div class="modal-header none-border-bottom">
+                            <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div style="text-align:center;padding-top: 120px;">
+                                <img src="./assets/img/success.svg" alt="" class="img-fluid" height="120" width="120">
+                                <p class="copy">
+                                    Tu mensaje fue enviado exitosamente
+                                </p>
+                                <p class="copy" style="margin-top: -19px;">
+                                    Te responderemos en un plazo de 24 hrs.
+                                </p>
+                                <div  style="text-align:center;margin-left: 55px;margin-top: 20px;">
+                                    <button type="button" class="close-success text-center me-0 me-md-5" data-bs-dismiss="modal"
+                                    aria-label="Close">Cerrar</button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!-- END-BANNER-HEADER -->
 
     </header>
 
     <!-- END HEADER -->
+    <div class="loading" id="loading">
+        <div class="justify-content-center">
+            <div class="spinner-border text-light" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="mt-2">
+            <p>Estamos enviando tu mensaje</p>
+        </div>
+    </div>
+
 
 
     <!-- SECTION STORE -->
@@ -115,6 +166,80 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+
+        let idModal = '#modalForm';
+        let idModalSuccess = '#modalSuccess';
+        let modal = null;
+        let modalSuccess = null;
+
+        function InOrCreateInstance() {
+            let myModalEl = document.querySelector(idModal)
+            modal = bootstrap.Modal.getOrCreateInstance(myModalEl)
+        }
+
+        function InOrCreateInstanceSuccess() {
+            let myModalEl = document.querySelector(idModalSuccess)
+            modalSuccess = bootstrap.Modal.getOrCreateInstance(myModalEl)
+        }
+
+        InOrCreateInstance();
+
+        function submitForm(event) {
+
+            event.preventDefault();
+
+            let loading = document.getElementById('loading');
+
+            loading.style.display = 'block';
+
+            modal.hide();
+
+            axios.get('https://gorest.co.in/public/v1/posts', {
+                responseType: 'json'
+            })
+                .then(function (res) {
+                    this.openSuccess();
+                    console.log(res);
+                })
+                .catch(function (err) {
+                    console.error('Error de conexión ' + err);
+                })
+                .then(function () {
+                    loading.style.display = 'none';
+                });
+
+        }
+
+        function openModal() {
+
+            InOrCreateInstance();
+
+            modal.show();
+
+            let nombre = document.getElementById('nombre');
+            let email = document.getElementById('email');
+            let telefono = document.getElementById('telefono');
+            let razon = document.getElementById('razon');
+            let comentario = document.getElementById('comentario');
+
+            nombre.value = null;
+            email.value = null;
+            telefono.value = null;
+            razon.value = "Otros";
+            comentario.value = null;
+
+        }
+
+        function openSuccess() {
+            InOrCreateInstanceSuccess();
+            modalSuccess.show();
+        }
+
+
+
+    </script>
 </body>
 
 </html>
