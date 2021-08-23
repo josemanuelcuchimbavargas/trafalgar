@@ -58,7 +58,7 @@ class Navbar extends HTMLElement {
                             </ul>
                         </li>
                         <li class="nav-item me-3 py-2 py-lg-0"><a class="nav-link text-white ${this.item == 'nosotros' ? 'active' : '' } "
-                                href="#!">Nosotros</a></li>
+                                href="./nosotros.html">Nosotros</a></li>
                         <li class="nav-item me-3 py-2 py-lg-0"><a class="nav-link text-white ${this.item == 'centro' ? 'active' : '' } "
                                 href="#!">Centro de ayuda</a></li>
                     

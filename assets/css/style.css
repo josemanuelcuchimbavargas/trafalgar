@@ -421,6 +421,73 @@ footer .logo-footer{
     font-weight: bold;
 }
 
+.banner-nosotros{
+    height:470px;
+    background-image: url(../img/banner-nosotros.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.construyendo{
+    background-color: #320000;
+    width:460px;
+    position: absolute;
+    top: 180px;
+}
+
+.construyendo .title{
+    font-size:46px;
+    color: #FD6826;
+    line-height:48px;
+    font-weight: 900;
+}
+
+.bank{
+    padding: 134px 0px 65px 0px;
+}
+
+.bank .title,
+.sucursal .title{
+    font-size:46px;
+    color: #320000;
+    line-height:48px;
+    font-weight: 900;
+}
+
+.bank .texto{
+    width:55%;
+}
+
+.man::after {
+    content: "";
+    background-color: transparent;
+    display: block;
+    height: 45px;
+    position: relative;
+    margin-top: -315px;
+}
+
+.woman{
+    width: 62%;
+}
+
+.sucursal{
+    padding: 120px 0px 140px 0px;
+    background-color: #F6F1EB;
+}
+
+.sucursal .subtitle{
+    font-weight: 500;
+    font-size:20px;
+    line-height:26px;
+    color: #320000;
+}
+
+.sucursal .button-banner--modifier:hover{
+    text-indent: -200px;
+}
+
 @media only screen and (max-width: 600px) {
 
     #navbarSupportedContent ul li:not(:last-child,.list-drop){
@@ -548,6 +615,78 @@ footer .logo-footer{
         text-align: center;
     }
 
+    .construyendo{
+        width:340px;
+        top: 295px;
+    }
+
+    .construyendo .title,
+    .bank .title,
+    .sucursal .title{
+        font-size:36px;
+        line-height: 37px;
+    }
+
+    .bank .texto{
+        width:100%;
+    }
+
+    .bank{
+        padding: 320px 0px 65px 0px;
+    }
+
+    .w-75{
+        width:100% !important;
+    }
+
+    .man::after{
+        margin-top: 0px;
+    }
+
+    .woman::after{
+        content: "";
+        background-color: transparent;
+        display: block; 
+        height: 45px;
+        position: relative;
+        margin-top: -217px;
+    }
+
+    .woman {
+        width:100%;
+    }
+
+    .woman-title{
+        color: #fff !important;
+    }
+
+    .sucursal .subtitle{
+        font-size:16px;
+        line-height:23px;
+    }
+
+    .sucursal{
+        padding: 60px 0px 110px 0px;
+    }
+
+    .sucursal .button-banner{
+        background-color: #083E7C;
+        text-align: center;
+    }
+
+    .sucursal .button-banner--modifier:hover{
+        color: #fff;
+        text-indent: 0px;
+    }
+    
+    .sucursal .button-banner.effect-1:before {
+        content: none;
+    }
+    
+    .sucursal .button-banner:hover{
+        color: #FFF !important;
+        border: 1px solid #083E7C !important;
+    }
   }
 
 
@@ -556,7 +695,6 @@ footer .logo-footer{
     .consult .banner-textos{
         width: 88%;
     }
-
 
   }
 
