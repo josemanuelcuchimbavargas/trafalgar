@@ -106,7 +106,7 @@
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content p-full" style="width: 910px;
-                    height: 730px;">
+                    height: 660px;">
                         <div class="modal-header none-border-bottom">
                             <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -120,8 +120,8 @@
                                 <p class="copy" style="margin-top: -19px;">
                                     Te responderemos en un plazo de 24 hrs.
                                 </p>
-                                <div  style="text-align:center;margin-left: 55px;margin-top: 20px;">
-                                    <button type="button" class="close-success text-center me-0 me-md-5" data-bs-dismiss="modal"
+                                <div  style="text-align:center;margin-top: 20px;">
+                                    <button type="button" class="close-success text-center me-0 me-md-0" data-bs-dismiss="modal"
                                     aria-label="Close">Cerrar</button>
                                 </div>
                             
@@ -196,9 +196,15 @@
 
             modal.hide();
 
-            axios.get('https://gorest.co.in/public/v1/posts', {
-                responseType: 'json'
-            })
+            const data = { 
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                telefono: document.getElementById('telefono').value,
+                razon: document.getElementById('razon').value,
+                comentario: document.getElementById('comentario').value,
+            };
+
+            axios.post('./src/email.php', data)
                 .then(function (res) {
                     this.openSuccess();
                     console.log(res);
