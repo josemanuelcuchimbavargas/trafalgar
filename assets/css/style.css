@@ -205,9 +205,15 @@ body{
     width: 330px;
 }
 
-.cta:hover,
+.cta:hover{
+    color: #fff;
+}
+
+
 .copy--link:hover{
     color: #fff;
+    text-decoration: underline;
+    transition: all 0.2s linear 0s;
 }
 
 .copy--link{

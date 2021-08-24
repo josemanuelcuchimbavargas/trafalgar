@@ -18,6 +18,10 @@
     <script src="assets/js/footer.js"></script>
     <script src="assets/js/store.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+           new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -40,9 +44,15 @@
                 <div class="banner-textos px-4 px-md-0">
                     <h2 class="title">Olvídate de trámites y no pierdas tu tiempo</h2>
                     <p class="copy">Trafalgar, el futuro de los servicios financieros en México</p>
-                    <div style="height:65px">
-                        <a href="#" class="text-center me-0 me-md-5 button-banner effect-1">Abre tu cuenta ahora</a>
-                        <a href="#" class="copy--link d-none d-md-inline-block">Quiero saber mas</a>
+                    <div style="height:65px" class=" d-flex justify-content-center justify-content-md-start">
+                        <div>
+                            <a href="#" class="text-center me-0 me-md-5 button-banner effect-1">Abre tu cuenta ahora</a>
+                        </div>
+                   
+                        <div class="align-self-center">
+                            <a href="#" class="copy--link d-none d-md-inline-block">Quiero saber mas</a>
+                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -59,11 +69,11 @@
     <section class="commission">
         <div
             class="container banner-main d-flex justify-content-start justify-content-md-end align-items-center p-0 flex-column flex-md-row pt-5 pt-md-0 px-3 px-md-0">
-            <div class="logo d-none d-md-block" style="width:30%">
+            <div class="logo d-none d-md-block wow animate__animated animate__fadeInDown" style="width:30%">
                 <img src="assets/img/cellphone-rectangle.png" class="mockup">
             </div>
 
-            <div class="banner-textos">
+            <div class="banner-textos wow animate__animated animate__fadeInUp">
                 <h2 class="title">Sin comisiones ocultas ni letras pequeñas</h2>
                 <p class="copy pt-4 pt-md-0">Podrás consultar toda la información de tu cuenta Trafalgar desde la app,
                     de manera sencilla y transparente.</p>
@@ -85,11 +95,11 @@
     <section class="security">
         <div class="container banner-main d-flex p-0 flex-column flex-md-row px-3 px-md-0">
             <div class="banner-textos text-start text-md-end">
-                <h1 class="title">Tu seguridad es lo más importante</h1>
+                <h1 class="title wow animate__animated animate__fadeInDown">Tu seguridad es lo más importante</h1>
                 <p class="copy">Sabemos que tu tranquilidad no tiene precio, es por eso que implementamos distintos
                     mecanismos de seguridad:</p>
                 <div class="mt-5">
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row">
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row  wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" >
                         <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Autoriza todas tus transacciones al
                             instante mediante contraseñas dinámicas.</p>
                         <div class="align-self-center">
@@ -98,7 +108,7 @@
 
                     </div>
 
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mt-4">
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mt-4  wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                         <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Bloquea y desbloquea tu tarjeta
                             Trafalgar desde la aplicación en cualquier momento.</p>
                         <div class="align-self-center">
@@ -107,13 +117,13 @@
 
                     </div>
 
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row justify-content-end mt-4">
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row justify-content-end mt-4 wow animate__animated animate__fadeInLeft" data-wow-delay="1.5s">
                         <div class="align-self-center">
                             <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Utilizamos sofisticados algoritmos
                                 para la prevención de fraudes.</p>
                         </div>
 
-                        <div class="align-self-center">
+                        <div class="align-self-center ">
                             <img src="assets/img/solid-2.png" width="36" height="36" alt="">
                         </div>
 
@@ -122,7 +132,7 @@
 
             </div>
 
-            <div class="logo">
+            <div class="logo wow animate__animated animate__fadeInUp">
                 <img src="assets/img/cellphone-rectangle-3.png" class="mockup">
             </div>
         </div>
@@ -176,7 +186,7 @@
             
             </div>
 
-            <div class="px-4 px-md-0 text-center text-md-start">
+            <div class="px-4 px-md-0 text-center text-md-start  wow animate__animated animate__fadeInRight">
                 <h2 class="title">Servicios <br>financieros a tu <br>medida</h2>
                 <p class="copy">Todo lo que necesitas desde la palma de tu mano.</p>
 
