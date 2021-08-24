@@ -112,12 +112,24 @@ body{
     color: #fff;
 }
 
+
+.banner-cuenta-trafalgar{
+    margin-top: 95px;    
+    height: 227px;
+    background-color: #F6F1EB;
+}
+
+
 .banner-main{
     height: 100%;
 }
 
 .banner-textos{
     width: 48%;
+}
+
+.banner-textos-cuenta-trafalgar{
+    width: 52%;
 }
 
 .title{
@@ -267,6 +279,14 @@ body{
    padding: 320px 0px 78px 0px;
    background-color:#F6F1EB;
 }
+
+.download-app{
+    padding: 115px 0px 78px 0px;
+    background-color:#fff;
+    height:1048px;
+ }
+
+
 
 .security-all{
     height: 925px;
