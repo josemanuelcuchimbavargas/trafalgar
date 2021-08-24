@@ -25,8 +25,8 @@ $mail = new PHPMailer\PHPMailer();
 $mail->isSMTP();
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;
-$mail->Username = "josemanuelcuchimbavargas@gmail.com";
-$mail->Password = "0124578qaZ....";
+$mail->Username = "";
+$mail->Password = "";
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 
