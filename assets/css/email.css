@@ -4,17 +4,22 @@ body{
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.none-border-bottom{
-    border-bottom:none !important;
-}
-
 .none-border-top{
     border-top:none !important;
 }
 
-.p-full{
-    padding: 10px 45px 15px 30px !important;
+.modal-lg{
+    max-width: 990px;
 }
+
+.modal-header{
+    padding: 45px 47px 0px 86px;
+}
+
+.modal-body{
+    padding: 55px 143px 51px 86px;
+}
+
 
 .send-email{
     padding: 20px 20px 19px;
@@ -24,7 +29,7 @@ body{
     color: #fff;
     font-weight: 500;
     border-radius: 60px;
-    width: 300px;
+    width: 328px;
     border-color: white;
     border-block-end-color: #A0A0A0;
     border-block-end: #A0A0A0;

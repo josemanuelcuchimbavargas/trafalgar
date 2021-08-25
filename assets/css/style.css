@@ -94,7 +94,7 @@ body{
     color: #083E7C;
     border: 1px solid #083E7C;
     border-radius: 70px;
-    padding: 5px 20px 5px 20px;    
+    padding: 6.5px 18.5px 6.5px 18.5px   
 }
 
 .btn-private-site:hover { 
@@ -105,7 +105,7 @@ body{
     color: #fff;
     background-color: #083E7C;
     border-radius: 70px;
-    padding: 6px 20px 6px 20px;   
+    padding: 6.5px 18.5px 6.5px 18.5px
 }
 
 .btn-open-account:hover { 
@@ -639,6 +639,24 @@ footer .logo-footer{
     color: #320000;
 }
 
+.dudas .info{
+    font-size: 20px;
+    line-height:36px;
+    font-weight: 500;
+    color: #FD6826;
+}
+
+.dudas .button-banner--modifier:hover{
+    text-indent: -150px;
+}
+
+.border-section{
+    border-right: 1px solid #E5E5E5;
+}
+
+footer .line{
+    margin: 19px 0px !important;
+}
 
 /*-----------------------------------  MOBILE ----------------------------------------------------------*/
 
@@ -720,8 +738,6 @@ footer .logo-footer{
           font-size:13px;
       }
 
-
-  
     .consult,
     .control{
         height: 100%;
@@ -793,7 +809,12 @@ footer .logo-footer{
     }
 
     .title-n,
-    .title-c{
+    .title-c,
+    .construyendo .title,
+    .bank .title,
+    .sucursal .title,
+    .control .title,
+    .banner-ayuda .title{
         font-size:36px;
         line-height:37px;
     }
@@ -807,10 +828,6 @@ footer .logo-footer{
         font-size: 15px;
     }
 
-    .control .title{
-        font-size:36px;
-        line-height: 37px;
-    }
 
     .swiper-container {
         width: 350px;
@@ -826,12 +843,6 @@ footer .logo-footer{
         top: 295px;
     }
 
-    .construyendo .title,
-    .bank .title,
-    .sucursal .title{
-        font-size:36px;
-        line-height: 37px;
-    }
 
     .bank .texto{
         width:100%;
@@ -842,7 +853,7 @@ footer .logo-footer{
     }
 
     .w-75{
-        width:100% !important;
+        width: 100% !important;
     }
 
     .man::after{
@@ -867,8 +878,8 @@ footer .logo-footer{
     }
 
     .sucursal .subtitle{
-        font-size:16px;
-        line-height:23px;
+        font-size: 16px;
+        line-height: 23px;
     }
 
     .sucursal{
@@ -892,6 +903,27 @@ footer .logo-footer{
     .sucursal .button-banner:hover{
         color: #FFF !important;
         border: 1px solid #083E7C !important;
+    }
+
+    .banner-ayuda{
+        background-color: #fff;
+        padding: 175px 0px 0px 0px;
+    }
+
+    footer{
+        padding: 38px 24px;
+    }
+
+    footer .links.text-white{
+        --bs-text-opacity: 0.4;
+    }
+
+    .border-section{
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    footer .line{
+        margin: 41px 0px !important;
     }
   }
 

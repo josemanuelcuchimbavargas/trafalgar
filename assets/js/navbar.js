@@ -60,7 +60,7 @@ class Navbar extends HTMLElement {
                         <li class="nav-item me-3 py-3 py-lg-0"><a class="nav-link text-white ${this.item == 'nosotros' ? 'active' : '' } "
                                 href="./nosotros.html">Nosotros</a></li>
                         <li class="nav-item me-3 py-3 py-lg-0 list-drop"><a class="nav-link text-white ${this.item == 'centro' ? 'active' : '' } "
-                                href="./email.html">Centro de ayuda</a></li>
+                                href="./centro-ayuda.html">Centro de ayuda</a></li>
                     
                      
 
@@ -68,9 +68,9 @@ class Navbar extends HTMLElement {
                     </ul>
                 </div>
 
-                <a class="nav-link no-hover btn-private-site d-none d-lg-flex me-3" href="#!">Acceso a mi sitio
+                <a class="nav-link no-hover btn-private-site d-none d-lg-flex me-3" href="#!" style="font-size:13px">Acceso a mi sitio
                     privado</a>
-                <a class="nav-link no-hover btn-open-account d-none d-lg-flex" href="#!">Abre tu cuenta</a>
+                <a class="nav-link no-hover btn-open-account d-none d-lg-flex" href="#!" style="font-size:13px">Abre tu cuenta</a>
             </div>
         </nav>
         `;
