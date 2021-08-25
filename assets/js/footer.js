@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <footer class="p-4 p-md-5">
+        <footer>
             <div class="d-flex justify-content-between flex-column flex-md-row">
                 <div class="d-flex flex-column flex-md-row">
                     <div class="align-self-start align-self-md-center">
@@ -25,11 +25,10 @@ class Footer extends HTMLElement {
                     <p class="me-4">Aviso de privacidad </p>
                     <p class="me-4"> Contrato de Adhesión </p>
                     <p> Riesgos y vulnerabilidades</p>
-
                 </div>
             </div>
 
-            <div class="py-4">
+            <div class="py-3">
                 <hr class="text-white">
             </div>
 

@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAFALGAR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="assets/js/footer.js"></script>
     <script src="assets/js/store.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script>
-           new WOW().init();
+        new WOW().init();
     </script>
 </head>
 
@@ -31,29 +29,36 @@
     <header>
 
         <!-- NAVBAR -->
-        
+
         <tr-navbar></tr-navbar>
 
         <!-- END NAVBAR -->
 
         <!-- BANNER-HEADER -->
 
-        <section class="banner">
-            <div class="container banner-main d-flex align-items-center p-0 flex-column flex-md-row pb-5 pb-md-0">
-                <img src="assets/img/image-8.png" class="mockup img-fluid">
+        <section class="banner shadow-img">
+            <div class="container d-flex align-items-center p-0 flex-column flex-md-row">
+                <div class="">
+                    <img src="assets/img/image-8.png" class="mockup img-fluid">
+                </div>
+
                 <div class="banner-textos px-4 px-md-0">
                     <h2 class="title">Olvídate de trámites y no pierdas tu tiempo</h2>
-                    <p class="copy">Trafalgar, el futuro de los servicios financieros en México</p>
-                    <div style="height:65px" class=" d-flex justify-content-center justify-content-md-start">
+                    <p class="copy mt-3 mt-md-0">Trafalgar, el futuro de los servicios financieros en México</p>
+                    <div style="height:65px" class=" d-flex justify-content-center justify-content-md-start mt-5">
                         <div>
                             <a href="#" class="text-center me-0 me-md-5 button-banner effect-1">Abre tu cuenta ahora</a>
                         </div>
-                   
+
                         <div class="align-self-center">
                             <a href="#" class="copy--link d-none d-md-inline-block">Quiero saber mas</a>
                         </div>
-                      
+
                     </div>
+                </div>
+
+                <div class="text-center d-block d-md-none mt-4">
+                    <img src="assets/img/flecha.png" alt="">
                 </div>
             </div>
         </section>
@@ -68,20 +73,20 @@
     <!-- SECTION COMMISSION -->
     <section class="commission">
         <div
-            class="container banner-main d-flex justify-content-start justify-content-md-end align-items-center p-0 flex-column flex-md-row pt-5 pt-md-0 px-3 px-md-0">
-            <div class="logo d-none d-md-block wow animate__animated animate__fadeInDown" style="width:30%">
+            class="container d-flex justify-content-start justify-content-md-end align-items-center p-0 flex-column flex-md-row pt-5 pt-md-0 px-3 px-md-0">
+            <div class="logo d-none d-md-block" style="width:30%">
                 <img src="assets/img/cellphone-rectangle.png" class="mockup">
             </div>
 
-            <div class="banner-textos wow animate__animated animate__fadeInUp">
+            <div class="banner-textos">
                 <h2 class="title">Sin comisiones ocultas ni letras pequeñas</h2>
                 <p class="copy pt-4 pt-md-0">Podrás consultar toda la información de tu cuenta Trafalgar desde la app,
                     de manera sencilla y transparente.</p>
             </div>
 
-            <!-- <div class="d-block d-md-none">
-                <img src="assets/img/cellphone-rectangle.png" class="mockup">
-            </div> -->
+            <div class="d-block d-md-none mt-5">
+                <img src="assets/img/cel-cut.png" class="mockup">
+            </div>
 
         </div>
 
@@ -95,11 +100,12 @@
     <section class="security">
         <div class="container banner-main d-flex p-0 flex-column flex-md-row px-3 px-md-0">
             <div class="banner-textos text-start text-md-end">
-                <h1 class="title wow animate__animated animate__fadeInDown">Tu seguridad es lo más importante</h1>
-                <p class="copy">Sabemos que tu tranquilidad no tiene precio, es por eso que implementamos distintos
+                <h1 class="title">Tu seguridad es lo más importante</h1>
+                <p class="copy mt-4 mt-md-0">Sabemos que tu tranquilidad no tiene precio, es por eso que implementamos
+                    distintos
                     mecanismos de seguridad:</p>
                 <div class="mt-5">
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row  wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" >
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row">
                         <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Autoriza todas tus transacciones al
                             instante mediante contraseñas dinámicas.</p>
                         <div class="align-self-center">
@@ -108,7 +114,7 @@
 
                     </div>
 
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mt-4  wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row mt-4">
                         <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Bloquea y desbloquea tu tarjeta
                             Trafalgar desde la aplicación en cualquier momento.</p>
                         <div class="align-self-center">
@@ -117,7 +123,7 @@
 
                     </div>
 
-                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row justify-content-end mt-4 wow animate__animated animate__fadeInLeft" data-wow-delay="1.5s">
+                    <div class="d-flex text-start text-md-end flex-row-reverse flex-md-row justify-content-end mt-4">
                         <div class="align-self-center">
                             <p class="m-0 me-0 me-md-3 ms-3 ms-md-0 security--item">Utilizamos sofisticados algoritmos
                                 para la prevención de fraudes.</p>
@@ -132,7 +138,7 @@
 
             </div>
 
-            <div class="logo wow animate__animated animate__fadeInUp">
+            <div class="logo">
                 <img src="assets/img/cellphone-rectangle-3.png" class="mockup">
             </div>
         </div>
@@ -154,39 +160,43 @@
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide text-end">
-                          <img src="assets/img/image-8.png" class="mockup img-fluid"> 
-                          <div class="text-center text-md-end">
-                              <p class="m-0 slide-title">Transferencias al momento</p>
-                              <p>100% de aprobación inmediata 
-                                  <br>Gestiona tus pagos, rápido, fácil , en línea</p>
-                          </div>
-                      </div>
-                      <div class="swiper-slide"><img src="assets/img/image-8.png" class="mockup img-fluid"> 
-                        <div class="text-center text-md-end">
-                            <p class="m-0 slide-title">Transferencias al momento</p>
-                            <p>100% de aprobación inmediata 
-                                <br>Gestiona tus pagos, rápido, fácil , en línea</p>
-                        </div></div>
-                      <div class="swiper-slide"><img src="assets/img/image-8.png" class="mockup img-fluid"> 
-                        <div class="text-center text-md-end">
-                            <p class="m-0 slide-title">Transferencias al momento</p>
-                            <p>100% de aprobación inmediata 
-                                <br>Gestiona tus pagos, rápido, fácil , en línea</p>
+                        <!-- Slides -->
+                        <div class="swiper-slide text-end">
+                            <img src="assets/img/image-8.png" class="mockup img-fluid">
+                            <div class="text-center text-md-end">
+                                <p class="m-0 slide-title">Transferencias al momento</p>
+                                <p>100% de aprobación inmediata
+                                    <br>Gestiona tus pagos, rápido, fácil , en línea
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                       <!-- <div class="swiper-slide"><img src="assets/img/image-8.png" class="mockup img-fluid">
+                            <div class="text-center text-md-end">
+                                <p class="m-0 slide-title">Transferencias al momento</p>
+                                <p>100% de aprobación inmediata
+                                    <br>Gestiona tus pagos, rápido, fácil , en línea
+                                </p>
+                            </div>
+                        </div>
+                         <div class="swiper-slide"><img src="assets/img/image-8.png" class="mockup img-fluid">
+                            <div class="text-center text-md-end">
+                                <p class="m-0 slide-title">Transferencias al momento</p>
+                                <p>100% de aprobación inmediata
+                                    <br>Gestiona tus pagos, rápido, fácil , en línea
+                                </p>
+                            </div>
+                        </div> -->
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-                  </div>
-                  <div class="text-center text-md-end mt-4 mt-md-5">
-                      <button class="btn  button-banner effect-1">Abre tu cuenta ahora</button>
-                  </div>
-            
+                </div>
+                <div class="text-center text-md-end mt-4 mt-md-5">
+                    <button class="btn  button-banner effect-1">Abre tu cuenta ahora</button>
+                </div>
+
             </div>
 
-            <div class="px-4 px-md-0 text-center text-md-start  wow animate__animated animate__fadeInRight">
+            <div class="px-4 px-md-0 text-center text-md-start">
                 <h2 class="title">Servicios <br>financieros a tu <br>medida</h2>
                 <p class="copy">Todo lo que necesitas desde la palma de tu mano.</p>
 

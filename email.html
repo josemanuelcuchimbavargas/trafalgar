@@ -29,114 +29,305 @@
 
         <!-- BANNER-HEADER -->
 
-        <section class="banner">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" onclick="openModal()">
-                Contactanos
-            </button>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" onclick="openSuccess()">
-                Success
-            </button>
-
-            <!-- Modal Formulario -->
-            <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content p-full">
-                        <div class="modal-header none-border-bottom">
-                            <div>
-                                <h2 class="modal-title title-modal" id="exampleModalLabel">Escríbenos</h2>
-                                <p class="copy-modal mt-2">Envíanos un mensaje y te responderemos en un plazo de 24 hrs.
-                                </p>
-                            </div>
-                            <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="sendEmail" name="sendEmail" onsubmit="submitForm(event)">
-                                <div class="row mb-3">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <label for="nombre" class="col-form-label copy-modal">Nombre</label>
-                                        <input type="text" class="form-control size-box color-default" id="nombre"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <label for="email" class="col-form-label copy-modal">Email</label>
-                                        <input type="email" class="form-control size-box color-default" id="email"
-                                            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
-                                            required>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <label for="telefono" class="col-form-label copy-modal">Télefono</label>
-                                        <input type="text" class="form-control size-box color-default" id="telefono"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                        <label for="razon" class="col-form-label copy-modal">Razón</label>
-                                        <select name="razon" id="razon" class="form-control size-box color-default"
-                                            required>
-                                            <option value="Otros">Otros</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <label for="comentario" class="col-form-label copy-modal">Comentario</label>
-                                        <textarea class="form-control color-box-textarea color-default"
-                                            name="comentario" id="comentario" cols="20" rows="5" required></textarea>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer none-border-top footer-no-flex">
-                            <button type="submit" class="send-email text-center me-0 me-md-5" form="sendEmail">Enviar
-                                mensaje</button>
-                        </div>
-                    </div>
-                </div>
+        <section class="banner-ayuda ">
+            <div class="container">
+                <p class="m-0 title">¿Cómo podemos ayudarte?</p>
+                <p class="copy-c mt-3">Si tienes dudas o necesitas resolver acciones, puedes consultar nuestras
+                    preguntas frecuentes o contactarnos:</p>
             </div>
-
-            <!-- Modal Success -->
-            <div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content p-full" style="width: 910px;
-                    height: 660px;">
-                        <div class="modal-header none-border-bottom">
-                            <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div style="text-align:center;padding-top: 120px;">
-                                <img src="./assets/img/success.svg" alt="" class="img-fluid" height="120" width="120">
-                                <p class="copy">
-                                    Tu mensaje fue enviado exitosamente
-                                </p>
-                                <p class="copy" style="margin-top: -19px;">
-                                    Te responderemos en un plazo de 24 hrs.
-                                </p>
-                                <div  style="text-align:center;margin-top: 20px;">
-                                    <button type="button" class="close-success text-center me-0 me-md-0" data-bs-dismiss="modal"
-                                    aria-label="Close">Cerrar</button>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </section>
         <!-- END-BANNER-HEADER -->
 
     </header>
 
     <!-- END HEADER -->
+
+    <section class="ayuda">
+
+        <div class="container ">
+
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <p class="title mb-4">Tarjeta</p>
+
+                        <div class="accordion" id="accordionExample">
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Tarjetas adicionales
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Para poder solicitar tarjetas adicionales, debes ponerte en contacto con
+                                        nosotros al <strong>teléfono 55 500 15800</strong>, en donde responderemos todas
+                                        tus dudas al respecto.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Mi tarjeta no funciona
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        No he recibido mi tarjeta
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Mi tarjeta fue rechazada
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="title mb-4">Apertura de cuenta</p>
+
+                        <div class="accordion" id="accordionExample">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Como abro una cuenta
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Que documento necesito
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="title mb-4">Retiro en efectivo</p>
+
+                        <div class="accordion" id="accordionExample">
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Puedo retirar en cualquier ATM
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        Cuanto puedo retirar
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        Puedo retirar en dolares
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6">
+                    <div class="dudas mt-4">
+                        <p class="m-0 title">¿Aún tienes dudas?</p>
+                        <p class="mt-2 subtitle">Escribenos y te responderemos a la brevedad</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-primary" onclick="openModal()">
+            Contactanos
+        </button>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" onclick="openSuccess()">
+            Success
+        </button>
+
+        <!-- Modal Formulario -->
+        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-full">
+                    <div class="modal-header none-border-bottom">
+                        <div>
+                            <h2 class="modal-title title-modal" id="exampleModalLabel">Escríbenos</h2>
+                            <p class="copy-modal mt-2">Envíanos un mensaje y te responderemos en un plazo de 24 hrs.
+                            </p>
+                        </div>
+                        <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="sendEmail" name="sendEmail" onsubmit="submitForm(event)">
+                            <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <label for="nombre" class="col-form-label copy-modal">Nombre</label>
+                                    <input type="text" class="form-control size-box color-default" id="nombre"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <label for="email" class="col-form-label copy-modal">Email</label>
+                                    <input type="email" class="form-control size-box color-default" id="email"
+                                        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                                        required>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <label for="telefono" class="col-form-label copy-modal">Télefono</label>
+                                    <input type="text" class="form-control size-box color-default" id="telefono"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <label for="razon" class="col-form-label copy-modal">Razón</label>
+                                    <select name="razon" id="razon" class="form-control size-box color-default"
+                                        required>
+                                        <option value="Otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <label for="comentario" class="col-form-label copy-modal">Comentario</label>
+                                    <textarea class="form-control color-box-textarea color-default"
+                                        name="comentario" id="comentario" cols="20" rows="5" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer none-border-top footer-no-flex">
+                        <button type="submit" class="send-email text-center me-0 me-md-5" form="sendEmail">Enviar
+                            mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Success -->
+        <div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-full" style="width: 910px;
+                height: 660px;">
+                    <div class="modal-header none-border-bottom">
+                        <button type="button" class="btn-close color-default" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="text-align:center;padding-top: 120px;">
+                            <img src="./assets/img/success.svg" alt="" class="img-fluid" height="120" width="120">
+                            <p class="copy">
+                                Tu mensaje fue enviado exitosamente
+                            </p>
+                            <p class="copy" style="margin-top: -19px;">
+                                Te responderemos en un plazo de 24 hrs.
+                            </p>
+                            <div  style="text-align:center;margin-top: 20px;">
+                                <button type="button" class="close-success text-center me-0 me-md-0" data-bs-dismiss="modal"
+                                aria-label="Close">Cerrar</button>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     <div class="loading" id="loading">
         <div class="justify-content-center">
             <div class="spinner-border text-light" role="status" style="width: 3rem; height: 3rem;">
@@ -196,7 +387,7 @@
 
             modal.hide();
 
-            const data = { 
+            const data = {
                 nombre: document.getElementById('nombre').value,
                 email: document.getElementById('email').value,
                 telefono: document.getElementById('telefono').value,
@@ -242,7 +433,7 @@
             InOrCreateInstanceSuccess();
             modalSuccess.show();
         }
-        
+
     </script>
 </body>
 

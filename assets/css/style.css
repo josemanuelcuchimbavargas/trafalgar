@@ -9,11 +9,28 @@ body{
 }
 
 .navbar-dark .navbar-toggler-icon{
-    background-image: url('../img/menu.svg')
+    background-image: url('../img/menu.svg');
+    width: 20px;
+    height: 16px;
 }
 
 .nav-link:hover:not(.btn-private-site, .btn-open-account){
     color: #320000 !important;
+}
+
+.navbar-dark .navbar-toggler{
+    border-color: rgba(255,255,255,0);
+}
+
+.dropdown-toggle::after{
+    content: url(../img/flecha-der.png);
+    margin-left: 23px;
+    border-top: 0 ;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    vertical-align: 0px;
+    transition: all 0.2s linear 0s;
 }
 
 .button-banner {
@@ -52,12 +69,12 @@ body{
 }
 
 .button-banner--modifier:hover{
-    text-indent: -80px;
+    text-indent: -58px;
 }
 
 .button-banner:hover:before{
     opacity: 1;
-    text-indent: -25px;
+    text-indent: -40px;
     
 }
 
@@ -101,9 +118,15 @@ body{
 }
 
 .banner{
-    margin-top: 95px;
-    height: 455px;
-    background: linear-gradient(154.69deg, #FE6925 39.38%, #FF8634 99.25%);
+    padding: 180px 0px 110px 0px;
+}
+
+
+.shadow-img{
+    background-image: url(../img/shadow-bar.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #FE6925;
 }
 
 .banner-tarjeta-trafalgar{
@@ -224,7 +247,7 @@ body{
 }
 
 .commission{
-    height: 455px;
+    padding: 125px 0px 251px 0px;
     background:#fff;
 }
 
@@ -260,6 +283,15 @@ body{
     color: #320000;    
 }
 
+.commission .logo::after {
+    content: "";
+    background-color: transparent;
+    display: block;
+    height: 45px;
+    position: relative;
+    margin-top: -420px;
+}
+
 .logo::after {
       content: "";
       background-color: transparent;
@@ -275,7 +307,7 @@ body{
 }
 
 .security-all{
-    height: 925px;
+    padding: 255px 0px 80px 0px;
     background:#F6F1EB;
 }
 
@@ -315,10 +347,6 @@ body{
    margin-left: 0px;
 }
 
-.security-all--padding{
-    padding-top: 295px;
-}
-
 .service{
     padding: 295px 0px 200px 0px;
 }
@@ -337,11 +365,16 @@ body{
 }
 
 .store{
-    height:375px;
+    padding: 84px 0px 105px 0px;
     background-color: #F6F1EB;
 }
 
+.store .copy--modifier {
+    color: #320000;
+}
+
 footer{
+    padding: 33px 70px 22px 70px;
     background-color: #320000;
 }
 
@@ -362,6 +395,7 @@ footer .logo-footer{
 .btn-open-account-mobile{
     background: #FD6826;
     border-radius: 70px;
+    padding: 20px 70px;
 }
 
 .label-menu-mobile{
@@ -397,7 +431,7 @@ footer .logo-footer{
 
 .solicita:hover{
     color: #FF861A;
-    margin-right: 25px !important;
+    margin-right: 55px !important;
     transition: all 0.2s linear 0s;
 }
 
@@ -454,7 +488,8 @@ footer .logo-footer{
 }
 
 .bank .title,
-.sucursal .title{
+.sucursal .title,
+.banner-ayuda .title{
     font-size:46px;
     color: #320000;
     line-height:48px;
@@ -494,17 +529,142 @@ footer .logo-footer{
     text-indent: -200px;
 }
 
+.banner-ayuda{
+    background-color: #F6F1EB;
+    padding: 175px 0px 70px 0px;
+}
+
+.ayuda{
+    padding: 70px 0px 95px 0px;
+}
+
+.ayuda .title{
+    font-size:36px;
+    line-height: 37px;
+    color: #320000;
+    font-weight:300;
+}
+
+.accordion-item{
+    margin-bottom: 15px;
+   border-radius:70px;
+   border: 1px solid transparent;
+}
+
+
+.accordion-header{
+ 
+   border-radius:70px
+}
+
+.accordion-button{
+   border: 1px solid #083E7C;
+   border-radius:70px;
+   color: #083E7C;
+   font-weight: 500;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: #083E7C;
+}
+
+.accordion-button:not(.collapsed){
+    color: #fff;
+    background-color: #FD6826;
+    box-shadow: none;
+    border:1px solid #FD6826;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+}
+
+.accordion-body{
+    font-size:15px;
+    color: #320000;
+    font-weight: 500;
+}
+
+.accordion-item:first-of-type{
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+
+.accordion-item:first-of-type .accordion-button{
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+
+.accordion-item:last-of-type{
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed{
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+
+.dudas .title{
+    font-size:36px;
+    line-height:48px;
+    color: #320000;
+    font-weight: 900;
+}
+
+.dudas .subtitle{
+    font-weight: 500;
+    color: #320000;
+}
+
+
+/*-----------------------------------  MOBILE ----------------------------------------------------------*/
+
 @media only screen and (max-width: 600px) {
 
-    #navbarSupportedContent ul li:not(:last-child,.list-drop){
+     .container-fluid{
+        width: 100%;
+     }
+    
+
+      #navbarSupportedContent ul li:not(:last-child,.list-drop){
         border-bottom: 1px solid rgba(255,255,255,0.1);
       }
+
+      .nav-link:hover:not(.btn-private-site, .btn-open-account){
+        color: #fff !important;
+      }
+
+      .nav-link.dropdown-toggle.show{
+        color: #FD6826 !important;
+      }
     
-      #navbarSupportedContent a:not(.no-hover):hover{
+      .dropdown-toggle.show::after{
+        content: url(../img/flecha-down.png);
+        margin-left: 23px;
+        border-top: 0 ;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        vertical-align: 0px;
+        transition: all 0.2s ease-out 1s;
+    }
+
+    .dropdown-item:focus, .dropdown-item:hover{
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .dropdown-item.active, .dropdown-item:active{
+        background-color: transparent;
+    }
+      /* #navbarSupportedContent a:not(.no-hover):hover{
         border-bottom: none;
         color: #fff !important;
       }
-    
+     */
       .offcanvas-header{ 
           display:block; 
       }
@@ -528,11 +688,27 @@ footer .logo-footer{
         transform: translateX(-100%);
       }
 
-    .banner,
+      .shadow-img{
+          background-position: center;
+      }
+
+      .banner{
+          padding: 115px 0px 20px 0px;
+      }
+
+      .btn-open-account{
+          font-size:13px;
+      }
+
+
+  
     .consult,
-    .control,
-    .security-all {
+    .control{
         height: 100%;
+    }
+
+    .security-all{
+        padding: 50px 0px 35px 0px;
     }
 
     .banner-tarjeta-trafalgar{
@@ -542,6 +718,10 @@ footer .logo-footer{
 
     .security .banner-textos{
         width: 100%;
+    }
+
+    .commission{
+        padding: 15px 0px 0px 0px;
     }
 
     .commission .title,
@@ -566,6 +746,10 @@ footer .logo-footer{
         padding:50px 0px 0px 0px;
     }
 
+    .store{
+        padding:62px 0px 100px 0px;
+    }
+    
     .security .logo{
         padding-top: 115px;
        text-align: center;
@@ -577,7 +761,7 @@ footer .logo-footer{
      }
 
      .consult .logo::after{
-        margin-top: -80px;
+        margin-top: -120px;
      }
 
      .service{
@@ -601,10 +785,6 @@ footer .logo-footer{
     .beneficio-item,
     .beneficio-title{
         font-size: 15px;
-    }
-
-    .security-all--padding{
-        padding-top: 50px;
     }
 
     .control .title{
