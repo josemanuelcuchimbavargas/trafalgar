@@ -18,6 +18,202 @@ body{
     color: #320000 !important;
 }
 
+
+/*timeline**/
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+  }
+  
+  .timeline:before {
+    top: 70px;
+    bottom: 210px;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background-color: #FD6826;
+    left: 4%;
+    margin-left: -3.5px;
+  }
+  
+  .timeline > li {
+    margin-bottom: 65px;
+    position: relative;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li > .timeline-panel {
+    width: 86%;   
+    padding: 20px;
+    margin-left:45px;
+    position: relative;
+
+  }
+  
+  .timeline > li > .timeline-badge-uno {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    background-color: #FD6826;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .timeline > li > .timeline-badge-dos {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 28%;
+    background-color: #FD6826;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .timeline > li > .timeline-badge-tres {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    background-color: #FD6826;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  
+  .timeline-heading {
+    width: 100%;
+  }
+  .timeline-clock {
+    width: 25%;
+  }
+  
+  .timeline-title {
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 37px;
+    color: #320000;
+  }
+  
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+  
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  
+  .flex-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .flex-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .flex-start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  
+  .flex-end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .flex-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .flex-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .align-items-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+/***/
+
+
 .navbar-dark .navbar-toggler{
     border-color: rgba(255,255,255,0);
 }
@@ -319,7 +515,7 @@ body{
 }
 
 .download-app{
-    padding: 115px 0px 78px 0px;
+    padding: 0px 0px 200px 0px;
     background-color:#fff;
     height:1048px;
  }
