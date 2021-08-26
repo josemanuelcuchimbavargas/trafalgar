@@ -287,9 +287,10 @@
                         <div class="row mb-3">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label for="email" class="col-form-label copy-modal">Email</label>
-                                <input type="email" class="form-control size-box color-default" id="email"
+                                <input type="email" class="form-control size-box color-default mb-3" id="email"
                                     pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
                                     required>
+                                <span id="errorEmail" style="color:#D90000;">El formato de email es incorrecto</span>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label for="telefono" class="col-form-label copy-modal">Télefono</label>
@@ -314,11 +315,12 @@
                     </form>
 
                     <div class="mt-5">
-                        <button type="submit" class="send-email text-center me-0 me-md-5" form="sendEmail">Enviar
+                        <button type="submit" id="enviarMensaje" class="send-email text-center me-0 me-md-5"
+                            form="sendEmail">Enviar
                             mensaje</button>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -389,6 +391,10 @@
         let idModalSuccess = '#modalSuccess';
         let modal = null;
         let modalSuccess = null;
+        let valido = document.getElementById('errorEmail');
+        let button = document.getElementById("enviarMensaje");
+        button.disabled = true;
+        valido.hidden = true;
 
         function InOrCreateInstance() {
             let myModalEl = document.querySelector(idModal)
@@ -457,6 +463,97 @@
         function openSuccess() {
             InOrCreateInstanceSuccess();
             modalSuccess.show();
+        }
+
+        document.getElementById('email').addEventListener('input', function () {
+            campo = event.target;
+
+            emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+            if (emailRegex.test(campo.value)) {
+                valido.hidden = true;
+                alertEmail(false);
+                validarCamposVacios(false);
+            } else if (campo.value == "" || campo.value == null) {
+                valido.hidden = true;
+                alertEmail(false);
+                validarCamposVacios(false);
+            }
+            else {
+                valido.hidden = false;
+                alertEmail(true);
+                validarCamposVacios(true);
+            }
+
+           
+
+        });
+
+        function alertEmail(estado) {
+            if (estado) {
+                document.getElementById('email').className = 'form-control color-default mb-3 color-box-error';
+                document.getElementById('email').className = document.getElementById('email').className.replace(/(?:^|\s)form-control size-box color-default mb-3(?!\S)/g, '')
+            } else {
+                document.getElementById('email').className = 'form-control size-box color-default mb-3';
+                document.getElementById('email').className = document.getElementById('email').className.replace(/(?:^|\s)form-control color-default mb-3 color-box-error(?!\S)/g, '')
+            }
+        }
+
+        document.getElementById('telefono').addEventListener('input', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+            validarCamposVacios();
+        });
+
+        document.getElementById('razon').addEventListener('input', function (e) {            
+            validarCamposVacios();
+        });
+
+        document.getElementById('comentario').addEventListener('input', function (e) {            
+            validarCamposVacios();
+        });
+
+        document.getElementById('nombre').addEventListener('input', function (e) {            
+            validarCamposVacios();
+        });
+
+        function validarCamposVacios(emailStatus) {
+
+            let nombre = document.getElementById('nombre').value;
+            let email = document.getElementById('email').value;
+            let telefono = document.getElementById('telefono').value;
+            let razon = document.getElementById('razon').value;
+            let comentario = document.getElementById('comentario').value;
+            let camposVacios = false;
+
+            if (nombre == null || nombre == '') {
+                camposVacios = true;
+            }
+
+            if (email == null || email == '') {
+                camposVacios = true;
+            }
+
+            if (telefono == null || telefono == '') {
+                camposVacios = true;
+            }
+
+            if (razon == null || razon == '') {
+                camposVacios = true;
+            }
+
+            if (comentario == null || comentario == '') {
+                camposVacios = true;
+            }
+
+            if(camposVacios || emailStatus){
+                button.setAttribute("style", "background-color:#A0A0A0 !important;");
+            } else {
+                button.setAttribute("style", "background-color:#083E7C !important;");                
+            }
+          
+            button.disabled = !camposVacios && !emailStatus ? false : true;
+
         }
 
     </script>

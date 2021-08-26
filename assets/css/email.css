@@ -74,6 +74,12 @@ body{
     border: 1px solid #320000 !important;
 }
 
+.color-box-error {
+    width: 100% !important;
+    height: 56px !important;
+    border: 1px solid #D90000 !important;
+}
+
 .color-box-textarea {
     border: 1px solid #320000 !important;
     width: 100% !important;
