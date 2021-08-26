@@ -97,6 +97,11 @@ body{
     padding: 6.5px 18.5px 6.5px 18.5px   
 }
 
+.card-position {
+    position: absolute;
+    left: 130px;
+}
+
 .btn-private-site:hover { 
     color: #083E7C;   
 }
@@ -119,15 +124,10 @@ body{
 
 .banner{
     padding: 180px 0px 110px 0px;
+    background: linear-gradient(154.69deg, #FE6925 39.38%, #FF8634 99.25%);
 }
 
 
-.shadow-img{
-    background-image: url(../img/shadow-bar.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-color: #FE6925;
-}
 
 .banner-tarjeta-trafalgar{
     margin-top: 95px;
@@ -734,6 +734,11 @@ footer .line{
           padding: 115px 0px 20px 0px;
       }
 
+      .card-position {
+            position: inherit;
+            left: 0px;
+       }   
+
       .btn-open-account{
           font-size:13px;
       }
@@ -849,7 +854,7 @@ footer .line{
     }
 
     .bank{
-        padding: 320px 0px 65px 0px;
+        padding: 320px 0px 38px 0px;
     }
 
     .w-75{
@@ -924,6 +929,18 @@ footer .line{
 
     footer .line{
         margin: 41px 0px !important;
+    }
+
+    
+    .shadow-img{
+        background-image: url(../img/shadow-bar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #FE6925;
+    }
+
+    .solicita:hover{
+        margin-right: 28px !important;
     }
   }
 
