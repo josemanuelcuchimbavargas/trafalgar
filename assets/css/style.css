@@ -268,7 +268,8 @@ body{
 
 .service .button-banner:hover,
 .consult .button-banner:hover,
-.control .button-banner:hover{  
+.control .button-banner:hover,
+.dudas .button-banner:hover{  
     border: 1px solid #FD6826 !important;
 }
 
