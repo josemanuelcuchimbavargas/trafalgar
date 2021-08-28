@@ -274,7 +274,7 @@
                         </p>
                     </div>
                     <button type="button" class="btn-close color-default mt-1 mt-md-0" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                        aria-label="Close" onclick="InitModal()"></button>
                 </div>
                 <div class="modal-body">
                     <form id="sendEmail" name="sendEmail" onsubmit="submitForm(event)">
@@ -394,6 +394,22 @@
         let button = document.getElementById("enviarMensaje");
         button.disabled = true;
         valido.hidden = true;
+        let emailStatus = false;
+
+        function InitModal(){
+            idModal = '#modalForm';
+            idModalSuccess = '#modalSuccess';
+            modal = null;
+            modalSuccess = null;
+            valido = document.getElementById('errorEmail');
+            button = document.getElementById("enviarMensaje");
+            button.disabled = true;
+            valido.hidden = true;
+            emailStatus = false;
+            document.getElementById('email').className = 'form-control size-box color-default mb-3';
+            document.getElementById('email').className = document.getElementById('email').className.replace(/(?:^|\s)form-control color-default mb-3 color-box-error(?!\S)/g, '')
+            button.setAttribute("style", "background-color:#A0A0A0 !important;");
+        }
 
         function InOrCreateInstance() {
             let myModalEl = document.querySelector(idModal)
@@ -472,19 +488,20 @@
             if (emailRegex.test(campo.value)) {
                 valido.hidden = true;
                 alertEmail(false);
-                validarCamposVacios(false);
+                emailStatus = false;
+                validarCamposVacios();
             } else if (campo.value == "" || campo.value == null) {
                 valido.hidden = true;
                 alertEmail(false);
-                validarCamposVacios(false);
+                emailStatus = false;
+                validarCamposVacios();
             }
             else {
                 valido.hidden = false;
                 alertEmail(true);
-                validarCamposVacios(true);
+                emailStatus = true;
+                validarCamposVacios();
             }
-
-           
 
         });
 
@@ -516,7 +533,7 @@
             validarCamposVacios();
         });
 
-        function validarCamposVacios(emailStatus) {
+        function validarCamposVacios() {
 
             let nombre = document.getElementById('nombre').value;
             let email = document.getElementById('email').value;
