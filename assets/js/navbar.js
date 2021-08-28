@@ -70,7 +70,7 @@ class Navbar extends HTMLElement {
 
                 <a class="nav-link no-hover btn-private-site d-none d-lg-flex me-3" href="#!" style="font-size:13px">Acceso a mi sitio
                     privado</a>
-                <a class="nav-link no-hover btn-open-account d-none d-lg-flex" href="#!" style="font-size:13px">Abre tu cuenta</a>
+                <a class="nav-link no-hover btn-open-account d-none d-lg-flex" href="./abre-tu-cuenta.html" style="font-size:13px">Abre tu cuenta</a>
             </div>
         </nav>
         `;
