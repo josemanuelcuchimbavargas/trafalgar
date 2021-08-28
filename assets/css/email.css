@@ -21,19 +21,11 @@ body{
 }
 
 
-.send-email{
-    padding: 20px 20px 19px;
-    display: inline-block;
-    background: #A0A0A0;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 60px;
-    width: 328px;
-    border-color: white;
-    border-block-end-color: #A0A0A0;
-    border-block-end: #A0A0A0;
-    border-block-start: #A0A0A0;
+.btn-email{
+   background: #A0A0A0;
+   border-radius: 70px;
+   color: #fff;
+   padding:20px 100px 20px 100px
 }
 
 .close-success{
@@ -123,5 +115,22 @@ body{
     width: 100%;
     height: 100%;
     background: #FD6826;    
-  }
+ }
   
+
+  /*-----------------------------------  MOBILE ----------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    .modal-header{
+        padding: 43px 42px 0px 33px;
+    }
+
+    .modal-body{
+        padding: 20px 33px 201px 33px;
+    }
+
+    .btn-email{
+        width: 100%;
+        padding: 0px;
+     }
+}

@@ -239,6 +239,7 @@ body{
     border-radius: 70px;
     width: 330px;
     position: relative;
+    border: 1px solid #320000;
 }
 
 .button-banner.effect-1{
@@ -255,12 +256,19 @@ body{
     top: 25px;
     opacity: 0;
     transition: all 0.2s linear 0s;
+  
 }
 
 .button-banner:hover{
     background-color:#fff;
     color: #FD6826 !important;
     text-indent: -100px;
+    border: 1px solid #fff;
+}
+
+.service .button-banner:hover,
+.consult .button-banner:hover,
+.control .button-banner:hover{  
     border: 1px solid #FD6826 !important;
 }
 
@@ -590,7 +598,7 @@ body{
 }
 
 footer{
-    padding: 33px 70px 22px 70px;
+    padding: 33px 0px 22px 0px;
     background-color: #320000;
 }
 
@@ -743,6 +751,7 @@ footer .logo-footer{
 
 .sucursal .button-banner--modifier:hover{
     text-indent: -200px;
+    border: 1px solid #FD6826 !important;
 }
 
 .banner-ayuda{
@@ -793,7 +802,8 @@ footer .logo-footer{
 }
 
 .accordion-button:not(.collapsed)::after{
-    background-image: none;
+    background-image: url(../img/close-white.svg);
+    transform: none;
 }
 
 .accordion-body{
@@ -1112,7 +1122,7 @@ footer .line{
     }
 
     footer{
-        padding: 38px 24px;
+        padding: 38px 0px;
     }
 
     footer .links.text-white{
