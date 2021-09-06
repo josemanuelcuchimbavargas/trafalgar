@@ -385,7 +385,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=API_SITE_KEY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdK8EscAAAAADxRb1Sv-nrApLzDqyA-N-twUcqI"></script>
     <script type="text/javascript">
 
         let idModal = '#modalForm';
@@ -429,8 +429,8 @@
 
             event.preventDefault();
 
-            grecaptcha.ready(function () {
-                grecaptcha.execute('API_SITE_KEY', { action: 'submit' }).then(function (token) {
+       //     grecaptcha.ready(function () {
+           //     grecaptcha.execute('6LdK8EscAAAAADxRb1Sv-nrApLzDqyA-N-twUcqI', { action: 'submit' }).then(function (token) {
                     
                     let loading = document.getElementById('loading');
 
@@ -457,8 +457,8 @@
                         .then(function () {
                             loading.style.display = 'none';
                         });
-                });
-            });
+         //       });
+        //    });
 
 
 

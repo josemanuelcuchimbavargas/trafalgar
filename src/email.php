@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer;
 $data = json_decode(file_get_contents("php://input"), true);
 
 $name = "Correo de Contacto";
-$email = "josemanuel@soho.cl";
+$email = "josemanuelcuchimbavargas@gmail.com";
 $subject = "Quiero saber mas";
 
 $body = '<ul>
@@ -25,14 +25,14 @@ $mail = new PHPMailer\PHPMailer();
 $mail->isSMTP();
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;
-$mail->Username = "";
+$mail->Username = $email;
 $mail->Password = "";
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 
 $mail->isHTML(true);
 $mail->setFrom($email, $name);
-$mail->addAddress("josemanuelcuchimbavargas@gmail.com");
+$mail->addAddress($email);
 $mail->Subject = ("$subject");
 $mail->Body = $body;
 
