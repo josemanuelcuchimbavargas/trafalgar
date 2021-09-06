@@ -315,7 +315,8 @@
                     </form>
 
                     <div class="mt-5">
-                        <button type="submit" id="enviarMensaje" class="btn btn-email py-3"
+                        <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                            data-action='submit' type="submit" id="enviarMensaje" class="btn btn-email py-3"
                             form="sendEmail">Enviar mensaje</button>
                     </div>
                 </div>
@@ -384,6 +385,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=API_SITE_KEY"></script>
     <script type="text/javascript">
 
         let idModal = '#modalForm';
@@ -396,7 +398,7 @@
         valido.hidden = true;
         let emailStatus = false;
 
-        function InitModal(){
+        function InitModal() {
             idModal = '#modalForm';
             idModalSuccess = '#modalSuccess';
             modal = null;
@@ -427,31 +429,38 @@
 
             event.preventDefault();
 
-            let loading = document.getElementById('loading');
+            grecaptcha.ready(function () {
+                grecaptcha.execute('API_SITE_KEY', { action: 'submit' }).then(function (token) {
+                    
+                    let loading = document.getElementById('loading');
 
-            loading.style.display = 'block';
+                    loading.style.display = 'block';
 
-            modal.hide();
+                    modal.hide();
 
-            const data = {
-                nombre: document.getElementById('nombre').value,
-                email: document.getElementById('email').value,
-                telefono: document.getElementById('telefono').value,
-                razon: document.getElementById('razon').value,
-                comentario: document.getElementById('comentario').value,
-            };
+                    const data = {
+                        nombre: document.getElementById('nombre').value,
+                        email: document.getElementById('email').value,
+                        telefono: document.getElementById('telefono').value,
+                        razon: document.getElementById('razon').value,
+                        comentario: document.getElementById('comentario').value,
+                    };
 
-            axios.post('./src/email.php', data)
-                .then(function (res) {
-                    this.openSuccess();
-                    console.log(res);
-                })
-                .catch(function (err) {
-                    console.error('Error de conexión ' + err);
-                })
-                .then(function () {
-                    loading.style.display = 'none';
+                    axios.post('./src/email.php', data)
+                        .then(function (res) {
+                            this.openSuccess();
+                            console.log(res);
+                        })
+                        .catch(function (err) {
+                            console.error('Error de conexión ' + err);
+                        })
+                        .then(function () {
+                            loading.style.display = 'none';
+                        });
                 });
+            });
+
+
 
         }
 
@@ -516,20 +525,20 @@
         }
 
         document.getElementById('telefono').addEventListener('input', function (e) {
-            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,4})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '' + x[1] + '-' + x[2] + (x[3] ? '-' + x[3] : '');
             validarCamposVacios();
         });
 
-        document.getElementById('razon').addEventListener('input', function (e) {            
+        document.getElementById('razon').addEventListener('input', function (e) {
             validarCamposVacios();
         });
 
-        document.getElementById('comentario').addEventListener('input', function (e) {            
+        document.getElementById('comentario').addEventListener('input', function (e) {
             validarCamposVacios();
         });
 
-        document.getElementById('nombre').addEventListener('input', function (e) {            
+        document.getElementById('nombre').addEventListener('input', function (e) {
             validarCamposVacios();
         });
 
@@ -562,12 +571,12 @@
                 camposVacios = true;
             }
 
-            if(camposVacios || emailStatus){
+            if (camposVacios || emailStatus) {
                 button.setAttribute("style", "background-color:#A0A0A0 !important;");
             } else {
-                button.setAttribute("style", "background-color:#083E7C !important;");                
+                button.setAttribute("style", "background-color:#083E7C !important;");
             }
-          
+
             button.disabled = !camposVacios && !emailStatus ? false : true;
 
         }
